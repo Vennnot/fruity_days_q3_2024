@@ -11,5 +11,14 @@ config_version=5
 [application]
 
 config/name="fruity_add_on"
+run/main_scene="res://whatever.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+FruityAutoLoad="*res://addons/fruity_days_q3_2024/main.tscn"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/fruity_days_q3_2024/plugin.cfg")
